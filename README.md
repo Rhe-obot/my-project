@@ -39,6 +39,7 @@ index.js: Entry point of the application.
 public/: Static assets and index.html file.
 
 ### How to Use
+you are welcomed by the welcome page which consist of links to all other pages
 Navigate to the Custom Counter page to see the custom hook in action.
 It contain an app with increment and decrement of upto 5 and -5 and run an error if it is more than that.
 
