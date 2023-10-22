@@ -36,13 +36,14 @@ hooks/: Custom hooks, such as the useCounter hook.
 pages/: Individual pages of the application.
 App.js: Main application component with route configurations.
 index.js: Entry point of the application.
+index.css: it contains all css componenet for the application.
 public/: Static assets and index.html file.
 
 ### How to Use
 you are welcomed by the welcome page which consist of links to all other pages
+
 Navigate to the Custom Counter page to see the custom hook in action.
-It contain an app with increment and decrement of upto 50 and -50 and run an error if it is more than that.
-the error will be displayed in the console.log.
+
 
 Access non-existing routes to trigger the 404 page.
 
