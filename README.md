@@ -40,7 +40,10 @@ public/: Static assets and index.html file.
 
 ### How to Use
 Navigate to the Custom Counter page to see the custom hook in action.
+It contain an app with increment and decrement of upto 5 and -5 and run an error if it is more than that.
 
 Access non-existing routes to trigger the 404 page.
 
 Visit the Error Boundary Test page by navigating to error page to test the error boundary.
+
+Thanks and God bless.
