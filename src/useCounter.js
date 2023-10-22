@@ -4,17 +4,11 @@ const useCounter = (initialValue = 0) => {
   const [count, setCount] = useState(initialValue);
 
    const increment = () => {
-    if (count >= 5) {
-      throw new Error('Counter cannot be greater than 5');
-    }
-    setCount(count + 1);
+       setCount(count + 1);
   };
 
   const decrement = () => {
-    if (count <= -5) {
-      throw new Error('Counter cannot be less than -5');
-    }
-    setCount(count - 1);
+      setCount(count - 1);
   };
 
   const reset = () => {
