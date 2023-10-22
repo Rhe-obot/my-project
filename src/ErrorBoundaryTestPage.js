@@ -5,25 +5,20 @@ class ErrorBoundaryTestPage extends React.Component {
     super(props);
     this.state = {
       hasError: false,
-      error: null,
     };
   }
 
   static getDerivedStateFromError(error) {
-    return { hasError: true, error };
+    return { hasError: true };
   }
 
   render() {
     if (this.state.hasError) {
-      return (
-        <div style={{ padding: '20px', backgroundColor: '#ffcccc', borderRadius: '5px', border: '1px solid #ff9999' }}>
-          <h2>Oops! Something went wrong.</h2>
-          <p>{this.state.error.message}</p>
-        </div>
-      );
+      // If an error occurs, render an error message
+      return <h2>Something went wrong.</h2>;
     }
 
-    return this.props.children;
+    return <h2>Something went wrong. Please try again later.</h2>;
   }
 }
 
