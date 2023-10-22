@@ -3,12 +3,18 @@ import { useState } from 'react';
 const useCounter = (initialValue = 0) => {
   const [count, setCount] = useState(initialValue);
 
-  const increment = () => {
-       setCount(count + 1);
+   const increment = () => {
+    if (count >= 5) {
+      throw new Error('Counter cannot be greater than 5');
+    }
+    setCount(count + 1);
   };
 
   const decrement = () => {
-      setCount(count - 1);
+    if (count <= -5) {
+      throw new Error('Counter cannot be less than -5');
+    }
+    setCount(count - 1);
   };
 
   const reset = () => {
